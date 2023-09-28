@@ -1,0 +1,12 @@
+<div class="flex flex-row justify-between toggle-dark-mode" data-controller="dark-mode" data-dark-mode-color-value="<%= session[:scheme_color] %>">
+  <label for="dark_toggle" class="flex items-center cursor-pointer" data-action="click->dark-mode#toggle">
+    <div class="relative">
+      <%= check_box_tag(:dark_toggle, nil, session[:scheme_color] == 'dark', class: 'checkbox hidden', data: { dark_mode_target: 'switch'}) %>
+      <div class="block border-[1px] dark:border-white border-gray-900 w-14 h-8 rounded-full"></div>
+      <div class="switch-dot absolute left-1 top-1 dark:bg-white bg-gray-800 w-6 h-6 rounded-full transition"></div>
+    </div>
+    <div class="ml-3 dark:text-white text-gray-900 font-medium">
+      <%= t '.toggle' %>
+    </div>
+  </label>
+</div>
