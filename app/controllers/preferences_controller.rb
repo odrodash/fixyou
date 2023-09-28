@@ -1,13 +1,14 @@
 class PreferencesController < ApplicationController
-  skip_before_action :verify_authenticity_token, only: %i[scheme_color switch_locale]
+  skip_before_action :verify_authenticity_token, only: %i[scheme_color set_locale]
 
   def scheme_color
     session[:scheme_color] = params[:color]
     render json: 'ok'
   end
 
-  def switch_locale
-    locale = params[:format].to_sym
+  def set_locale
+    locale = params[:locale].to_sym
+    session[:locale] = locale
     I18n.locale = locale
 
     redirect_to request.referrer

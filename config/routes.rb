@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   root 'pages#home'
-  
+
   post 'preferences/scheme_color'
-  post 'preferences/switch_locale'
+  get 'preferences/set_locale'
 end

@@ -2,6 +2,6 @@ en:
   pages:
     home:
       title: "Technical assistance for your Apple® devices"
-  shared:
-    toggle_dark_mode:
+  preferences:
+    dark_mode_switch:
       toggle: "Dark mode"

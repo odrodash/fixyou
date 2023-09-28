@@ -2,6 +2,6 @@ es:
   pages:
     home:
       title: "Asistencia técnica para tus equipos Apple®"
-  shared:
-    toggle_dark_mode:
+  preferences:
+    dark_mode_switch:
       toggle: "Modo oscuro"

@@ -1,4 +1,7 @@
-<nav class="flex">
-  <%= render 'preferences/dark_mode_swtich' %>
-  <%= render 'preferences/language_select' %>
+<nav class="flex h-20 justify-between">
+  <%= image_tag 'logo_normal.png' %>
+  <div class="flex items-center">
+    <%= render 'preferences/dark_mode_switch' %>
+    <%= render 'preferences/language_select' %>
+  </div>
 </nav>
