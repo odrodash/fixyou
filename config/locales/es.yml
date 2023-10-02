@@ -1,7 +1,11 @@
 es:
   pages:
     home:
-      title: "Asistencia técnica para tus equipos Apple®"
+      title: "Asistencia técnica para tus productos Apple"
+      desc: "Agende ahora para recibir soporte de un profesional en productos Apple"
+      btn_calendly: "Agendar ahora"
+      btn_contact_us: "Contáctanos"
+      wpp: 'https://api.whatsapp.com/send?phone=59169351663&text=Hola%2C%20estoy%20interesado%20en%20adquirir%20soporte%20para%20mi%20producto%20apple%3A%0ATengo%20un%20...%0AY%20necesito%20...'
   preferences:
     dark_mode_switch:
       toggle: "Modo oscuro"

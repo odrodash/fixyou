@@ -1,7 +1,11 @@
 en:
   pages:
     home:
-      title: "Technical assistance for your Apple® devices"
+      title: "Technical support for your Apple products"
+      desc: "Schedule now to receive support from an Apple product professional"
+      btn_calendly: "Schedule now"
+      btn_contact_us: "Contact us"
+      wpp: 'https://api.whatsapp.com/send?phone=59169351663&text=Hello%2C%20I%20want%20to%20get%20support%20for%20my%20apple%20product%3A%0AI%20have%20a%20...%0AAnd%20I%20need%20...'
   preferences:
     dark_mode_switch:
       toggle: "Dark mode"

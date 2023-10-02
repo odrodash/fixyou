@@ -1,7 +1,7 @@
 import { Controller } from '@hotwired/stimulus'
 
 export default class extends Controller {
-  static targets = ["switch"]
+  static targets = ["switch", "iconContainer"]
   static values = { color: String }
 
   connect() {
@@ -27,11 +27,17 @@ export default class extends Controller {
   updateView(status) {
     this.toggleHtmlClass(status)
     this.switchTarget.checked = status
+    this.toggleIcon(status)
   }
 
   toggleHtmlClass(status) {
     const htmlElement = document.querySelector('html').classList
     status ? htmlElement.add('dark') : htmlElement.remove('dark')
+  }
+
+  toggleIcon(status) {
+    const style = status ? 'fa-moon text-black' : 'fa-sun text-white'
+    this.iconContainerTarget.innerHTML = `<i class="fa-regular ${style} "></i>`
   }
 
   savePreference(status) {
